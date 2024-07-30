@@ -26,6 +26,7 @@ export default function Heading({ headingText }: HeadingProps) {
   }, []);
 
   return (
+    // TODO: Add the disappear animation on scroll
     <h1 className={`text-9xl font-bold mb-4 gradient-text transition-opacity duration-1000 ${isVisible ? "opacity-100 fade-in-up" : "opacity-0"}`}>
       {headingText}
     </h1>
