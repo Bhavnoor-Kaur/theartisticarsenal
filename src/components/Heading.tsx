@@ -1,0 +1,33 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
+interface HeadingProps {
+  headingText: string;
+}
+
+export default function Heading({ headingText }: HeadingProps) {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.getElementById("know-more");
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        // Trigger fade-out when the top of the "Know More" section reaches the viewport
+        setIsVisible(rect.top > window.innerHeight * 0.5);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <h1 className={`text-9xl font-bold mb-4 gradient-text transition-opacity duration-1000 ${isVisible ? "opacity-100 fade-in-up" : "opacity-0"}`}>
+      {headingText}
+    </h1>
+  );
+}
