@@ -16,7 +16,7 @@ export default function Home() {
           {/* <h1 className="text-9xl font-bold mb-4 gradient-text fade-in-up">The Artistic Arsenal</h1> */}
           <Heading headingText="The Artistic Arsenal" />
           <p className="text-lg max-w-2xl mx-auto">
-              A New Multifaceted Project from Jeff Koons. Presented by Pace Verso. Delivered to the Moon by 4Space and Intuitive Machines.
+              Enter the world of art and creativity
           </p>
       </div>
 
