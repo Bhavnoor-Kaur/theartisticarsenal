@@ -1,49 +1,47 @@
 import React from "react";
-import Link from "next/link"; // For Next.js routing
-import { FaInstagram } from "react-icons/fa";
-import { MdOutlineMail } from "react-icons/md";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-20">
-      {/* Logo */}
-      <div className="flex items-center">
-        <img src="/shortcuticon.jpg" alt="Logo" className="h-10 mr-3" />
-      </div>
+    <nav className="fixed top-0 left-0 right-0 flex items-center justify-center py-2 px-8 bg-transparent text-gold z-50">
+      <div className="flex items-center justify-between w-full max-w-6xl px-24 h-16 border-b-2 border-gold">
+        {/* Left links */}
+        <div className="flex space-x-10 text-xl text-white">
+          <Link href="#home" className="hover:underline">
+            HOME
+          </Link>
+          <Link href="#work" className="hover:underline">
+            WORK
+          </Link>
+          <Link href="#illustrations" className="hover:underline">
+            ILLUSTRATIONS
+          </Link>
+        </div>
 
-      {/* Navigation Links */}
-      <div className="hidden md:flex space-x-8">
-        <Link href="/about" legacyBehavior>
-          <a className="text-white hover:text-yellow-50">About</a>
-        </Link>
-        <Link href="/artworks" legacyBehavior>
-          <a className="text-white hover:text-yellow-50">Art Works</a>
-        </Link>
-        <Link href="/artclassest" legacyBehavior>
-          <a className="text-white hover:text-yellow-50">Art Classes</a>
-        </Link>
-        <Link href="/workshops" legacyBehavior>
-          <a className="text-white hover:text-yellow-50">Workshops</a>
-        </Link>
-        <Link href="/contact" legacyBehavior>
-          <a className="text-white hover:text-yellow-50">Contact</a>
-        </Link>
-      </div>
+        {/* Logo in the center */}
+        <div className="absolute inset-x-0 mx-auto py-0 flex justify-center">
+          <img
+            src="/shortcuticon.jpg"
+            alt="Logo"
+            className="h-12 w-auto"
+          />
+        </div>
 
-      {/* Social Media Icons */}
-      <div className="flex space-x-2">
-        <a href="https://www.instagram.com/theartisticarsenal/?hl=en" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-50">
-            <FaInstagram />
-        </a>
-        {/* Link to email */}
-        <a href="mailto:theartisticarsenalco@gmail.com" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-50">
-            <MdOutlineMail />
-        </a>
-
+        {/* Right links */}
+        <div className="flex space-x-10 text-xl text-white">
+          <Link href="#about" className="hover:underline">
+            ABOUT
+          </Link>
+          <Link href="#services" className="hover:underline">
+            SERVICES
+          </Link>
+          <Link href="#contact" className="hover:underline">
+            CONTACT
+          </Link>
+        </div>
       </div>
-      
     </nav>
   );
-}
+};
 
 export default Navbar;
