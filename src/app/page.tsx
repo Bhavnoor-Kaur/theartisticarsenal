@@ -1,3 +1,4 @@
+import ArtWorks from "@/components/ArtWorks";
 import Heading from "@/components/Heading";
 import ScrollButton from "@/components/ScrollButton";
 import Image from "next/image";
@@ -56,6 +57,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <ArtWorks />
     </div>
 
     </div>
