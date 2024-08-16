@@ -1,7 +1,6 @@
-import ArtWorks from "@/components/ArtWorks";
-import Heading from "@/components/Heading";
-import ScrollButton from "@/components/ScrollButton";
-import Image from "next/image";
+import ArtWorks from "@/app/components/ArtWorksSection";
+import Heading from "@/app/components/Heading";
+import ScrollButton from "@/app/components/ScrollButton";
 import { useEffect, useState } from "react";
 
 export default function Home() {

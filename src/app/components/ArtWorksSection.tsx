@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 export default function ArtWorks() {
@@ -75,9 +76,12 @@ return (
                     </div>
                 </div>
             </div>
-            <button className="mt-8 px-6 py-2 bg-transparent text-black font-semibold rounded-lg border border-black">
-                Know More
-            </button>
+            <Link href="/artworks">
+                <button className="mt-8 px-6 py-2 bg-transparent text-black font-semibold rounded-lg border border-black">
+                    Know More
+                </button>
+            </Link>
+            
         </div>
     </div>
 );

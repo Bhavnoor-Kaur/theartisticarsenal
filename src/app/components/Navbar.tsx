@@ -7,13 +7,13 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full max-w-6xl px-24 h-16 border-b-2 border-gold">
         {/* Left links */}
         <div className="flex space-x-10 text-xl text-white">
-          <Link href="#home" className="hover:underline">
+          <Link href="/page" className="hover:underline">
             HOME
           </Link>
           <Link href="#work" className="hover:underline">
             WORK
           </Link>
-          <Link href="#illustrations" className="hover:underline">
+          <Link href="/artworks" className="hover:underline">
             ILLUSTRATIONS
           </Link>
         </div>
