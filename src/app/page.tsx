@@ -2,6 +2,7 @@ import ArtWorks from "@/app/components/ArtWorksSection";
 import Heading from "@/app/components/Heading";
 import ScrollButton from "@/app/components/ScrollButton";
 import { useEffect, useState } from "react";
+import AboutMeSection from "./components/AboutMeSection";
 
 export default function Home() {
   const backgroundImage = "https://images.squarespace-cdn.com/content/v1/53c30017e4b0a643a8ff7a11/74a65ab8-7a89-46f7-b4f1-fb79d07edba6/Morning_InTheGulf_rxoknt_epiynf.jpg";
@@ -56,6 +57,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <AboutMeSection />
 
         <ArtWorks />
     </div>

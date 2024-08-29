@@ -30,7 +30,7 @@ export default function ArtWorks() {
 return (
     <div className="py-16 bg-gray-100">
         <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-8">ILLUSTRATIONS</h2>
+            <h2 className="text-4xl font-bold mb-8">ARTWORKS</h2>
             <div className="overflow-hidden relative" ref={scrollRef}>
                 <div className="flex overflow-hidden space-x-0">
                     <div className="flex animate-scroll">
