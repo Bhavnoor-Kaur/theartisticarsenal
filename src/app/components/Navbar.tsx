@@ -7,35 +7,35 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full max-w-6xl px-24 h-16 border-b-2 border-gold">
         {/* Left links */}
         <div className="flex space-x-10 text-xl text-white">
-          <Link href="/page" className="hover:underline">
-            HOME
+          <Link href="/" className="hover:underline">
+            <p className="hover:underline">HOME</p>
           </Link>
-          <Link href="#work" className="hover:underline">
+          <Link href="/work" className="hover:underline">
             WORK
           </Link>
           <Link href="/artworks" className="hover:underline">
-            ILLUSTRATIONS
+            ARTWORKS
           </Link>
         </div>
 
         {/* Logo in the center */}
-        <div className="absolute inset-x-0 mx-auto py-0 flex justify-center">
-          <img
-            src="/shortcuticon.jpg"
-            alt="Logo"
-            className="h-12 w-auto"
-          />
-        </div>
+        <Link href="/artworks">
+            <img
+              src="/shortcuticon.jpg"
+              alt="Logo"
+              className="h-12 w-auto"
+            />
+          </Link>
 
         {/* Right links */}
         <div className="flex space-x-10 text-xl text-white">
-          <Link href="#about" className="hover:underline">
+          <Link href="/about" className="hover:underline">
             ABOUT
           </Link>
-          <Link href="#services" className="hover:underline">
+          <Link href="/services" className="hover:underline">
             SERVICES
           </Link>
-          <Link href="#contact" className="hover:underline">
+          <Link href="/contact" className="hover:underline">
             CONTACT
           </Link>
         </div>
