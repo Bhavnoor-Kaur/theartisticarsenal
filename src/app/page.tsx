@@ -1,23 +1,28 @@
 import ArtWorks from "@/app/components/ArtWorksSection";
 import Heading from "@/app/components/Heading";
 import ScrollButton from "@/app/components/ScrollButton";
-import { useEffect, useState } from "react";
 import AboutMeSection from "./components/AboutMeSection";
 
+import localFont from 'next/font/local';
+
+const CloudCondensed = localFont({ src: '/fonts/Cloud-Condensed.ttf' })
+
 export default function Home() {
-  const backgroundImage = "https://images.squarespace-cdn.com/content/v1/53c30017e4b0a643a8ff7a11/74a65ab8-7a89-46f7-b4f1-fb79d07edba6/Morning_InTheGulf_rxoknt_epiynf.jpg";
+  const backgroundImage = "/homepage.png";
 
   return (
     <div className="relative">
       <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
-        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Optional: Dark overlay */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-            {/* <h1 className="text-9xl font-bold mb-4 gradient-text fade-in-up">The Artistic Arsenal</h1> */}
-            <Heading headingText="The Artistic Arsenal" />
-            <p className="text-lg max-w-2xl mx-auto">
-                Enter the world of art and creativity
-            </p>
-        </div>
+          <div className="relative z-10 flex flex-col items-center justify-center bottom-12 h-full text-center text-white">
+            <div className="relative">
+              {/* Heading Component */}
+              <Heading headingText="The Artistic Arsenal" />
+              {/* Paragraph with Overlap */}
+              <p className={`${CloudCondensed.className} text-3xl font-medium text-melon mx-auto absolute top-64 w-full transform -translate-y-1/2 z-0`}>
+                By Bhavnoor Kaur
+              </p>
+            </div>
+          </div>
 
         {/* Scroll Button */}
         <ScrollButton targetId="know-more" />

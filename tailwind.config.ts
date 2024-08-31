@@ -6,6 +6,19 @@ module.exports = {
     'src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '2.5rem',
+      '3xl': '3.5rem',
+      '4xl': '5.5rem',
+      '5xl': '7.5rem',
+      '6xl': '9.5rem',
+      '7xl': '11.5rem',
+      '8xl': '13.5rem',
+      '9xl': '14rem',
+    },
     extend: {
       colors: {
         green: {
@@ -28,6 +41,8 @@ module.exports = {
         yellow: {
           50: '#FEC601',
         },
+        'indigo-dye': '#254e70',
+        'melon': '#ffa69e',
       },
       backgroundImage: {
         'bg-img-1': "url('/img-1.png')",

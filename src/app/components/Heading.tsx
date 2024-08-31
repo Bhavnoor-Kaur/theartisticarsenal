@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import localFont from 'next/font/local';
+
+const AdleryProFont = localFont({ src: '../fonts/Adlery-Pro.ttf' })
 
 interface HeadingProps {
   headingText: string;
@@ -27,7 +30,7 @@ export default function Heading({ headingText }: HeadingProps) {
 
   return (
     // TODO: Add the disappear animation on scroll
-    <h1 className={`text-9xl font-bold mb-4 gradient-text transition-opacity duration-1000 ${isVisible ? "opacity-100 fade-in-up" : "opacity-0"}`}>
+    <h1 className={`${AdleryProFont.className} text-9xl mx-auto drop-shadow-2xl text-indigo-dye transition-opacity duration-1000 ${isVisible ? "opacity-100 fade-in-up" : "opacity-0"}`}>
       {headingText}
     </h1>
   );
