@@ -7,8 +7,8 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      sm: '0.8rem',
-      base: '1rem',
+      sm: '1.25rem',
+      base: '1.5rem',
       lg: '1.75rem',
       xl: '2rem',
       '2xl': '2.5rem',
@@ -46,6 +46,7 @@ module.exports = {
         'melon': '#ffa69e',
         'bright-pink': "#FD5277",
         'tiffany-blue': "#9ACEBC",
+        'bistre': "#251605",
       },
       backgroundImage: {
         'bg-img-1': "url('/img-1.png')",
