@@ -1,19 +1,23 @@
 import React from "react";
 import Link from "next/link";
 
+import localFont from 'next/font/local';
+
+const RobotoLight = localFont({ src: '../fonts/Roboto-Light.ttf' })
+
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 flex items-center justify-center py-2 px-8 bg-transparent text-gold z-50">
       <div className="flex items-center justify-between w-full max-w-6xl px-24 h-16 border-b-2 border-bright-pink">
         {/* Left links */}
-        <div className="flex space-x-10 text-lg text-indigo-dye">
-          <Link href="/" className="hover:scale-110 hover:text-tiffany-blue duration-300">
+        <div className={`${RobotoLight.className} flex space-x-10 text-lg text-indigo-dye`}>
+          <Link href="/" className="hover:scale-105 hover:font-extrabold hover:text-tiffany-blue duration-300">
             HOME
           </Link>
-          <Link href="/work" className="hover:scale-110 hover:text-tiffany-blue duration-300">
+          <Link href="/work" className="hover:scale-105 hover:font-extrabold hover:text-tiffany-blue duration-300">
             WORK
           </Link>
-          <Link href="/artworks" className="hover:scale-110 hover:text-tiffany-blue duration-300">
+          <Link href="/artworks" className="hover:scale-105 hover:font-extrabold hover:text-tiffany-blue duration-300">
             ARTWORKS
           </Link>
         </div>
@@ -28,14 +32,14 @@ const Navbar = () => {
           </Link>
 
         {/* Right links */}
-        <div className="flex space-x-10 text-lg text-indigo-dye">
-          <Link href="/about" className="hover:scale-110 hover:text-tiffany-blue duration-300">
+        <div className={`${RobotoLight.className} flex space-x-10 text-lg text-indigo-dye`}>
+          <Link href="/about" className="hover:scale-105 hover:font-extrabold hover:text-tiffany-blue duration-300">
             ABOUT
           </Link>
-          <Link href="/services" className="hover:scale-110 hover:text-tiffany-blue duration-300">
+          <Link href="/services" className="hover:scale-105 hover:font-extrabold hover:text-tiffany-blue duration-300">
             SERVICES
           </Link>
-          <Link href="/contact" className="hover:scale-110 hover:text-tiffany-blue duration-300">
+          <Link href="/contact" className="hover:scale-105 hover:font-extrabold hover:text-tiffany-blue duration-300">
             CONTACT
           </Link>
         </div>
