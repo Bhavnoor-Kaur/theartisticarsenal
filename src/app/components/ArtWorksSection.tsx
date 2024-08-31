@@ -3,6 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import localFont from 'next/font/local';
+
+const RobotoLight = localFont({ src: '../fonts/Roboto-Light.ttf' })
 
 export default function ArtWorks() {
   const illustrations = [
@@ -28,9 +31,9 @@ export default function ArtWorks() {
 
 
 return (
-    <div className="py-16 bg-gray-100">
+    <div className="py-16">
         <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-8">ARTWORKS</h2>
+            <h2 className={`${RobotoLight.className} text-4xl font-bold mb-8`}>ARTWORKS</h2>
             <div className="overflow-hidden relative" ref={scrollRef}>
                 <div className="flex overflow-hidden space-x-0">
                     <div className="flex animate-scroll">
@@ -47,8 +50,8 @@ return (
                                     className="transition-transform duration-300 ease-in-out group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                                    <h3 className="text-2xl font-bold text-white">{illustration.title}</h3>
-                                    <p className="text-lg text-white mt-2">Learn more</p>
+                                    <h3 className={`${RobotoLight.className} text-2xl font-bold text-white`}>{illustration.title}</h3>
+                                    <p className={`${RobotoLight.className} text-lg text-white mt-2`}>Learn more</p>
                                 </div>
                             </div>
                         ))}
@@ -77,7 +80,7 @@ return (
                 </div>
             </div>
             <Link href="/artworks">
-                <button className="mt-8 px-6 py-2 bg-transparent text-black font-semibold rounded-lg border border-black">
+                <button className={`${RobotoLight.className} mt-8 px-6 py-2 bg-transparent text-sm text-bistre rounded-lg border border-tiffany-blue`}>
                     Know More
                 </button>
             </Link>

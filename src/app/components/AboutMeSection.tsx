@@ -7,7 +7,7 @@ const RobotoLight = localFont({ src: '../fonts/Roboto-Light.ttf' })
 
 export default function AboutMeSection() {
     return (
-        <div className="relative p-16 rounded-lg shadow-lg mx-auto mt-10">
+        <div className="relative p-16 rounded-lg mx-auto mt-10">
             <div className="flex flex-col lg:flex-row items-center">
                 {/* Left Side: Text */}
                 <div className="lg:w-2/3 p-24">
