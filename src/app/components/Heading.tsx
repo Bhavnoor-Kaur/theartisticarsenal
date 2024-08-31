@@ -30,7 +30,7 @@ export default function Heading({ headingText }: HeadingProps) {
 
   return (
     // TODO: Add the disappear animation on scroll
-    <h1 className={`${AdleryProFont.className} text-9xl mx-auto drop-shadow-2xl text-indigo-dye transition-opacity duration-1000 ${isVisible ? "opacity-100 fade-in-up" : "opacity-0"}`}>
+    <h1 className={`${AdleryProFont.className} text-9xl sm:text-4xl md:text-6xl lg:text-7xl mx-auto drop-shadow-2xl text-indigo-dye transition-opacity duration-1000 ${isVisible ? "opacity-100 fade-in-up" : "opacity-0"}`}>
       {headingText}
     </h1>
   );
