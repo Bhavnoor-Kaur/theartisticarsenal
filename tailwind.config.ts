@@ -9,6 +9,7 @@ module.exports = {
     fontSize: {
       sm: '0.8rem',
       base: '1rem',
+      lg: '1.5rem',
       xl: '2rem',
       '2xl': '2.5rem',
       '3xl': '3.5rem',
@@ -43,6 +44,8 @@ module.exports = {
         },
         'indigo-dye': '#254e70',
         'melon': '#ffa69e',
+        'bright-pink': "#FD5277",
+        'tiffany-blue': "#9ACEBC",
       },
       backgroundImage: {
         'bg-img-1': "url('/img-1.png')",
