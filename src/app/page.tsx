@@ -24,9 +24,6 @@ export default function Home() {
             </div>
           </div>
 
-        {/* Scroll Button */}
-        <ScrollButton targetId="know-more" />
-
         <AboutMeSection />
 
         <ArtWorks />
