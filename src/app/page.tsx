@@ -1,6 +1,5 @@
 import ArtWorks from "@/app/components/ArtWorksSection";
 import Heading from "@/app/components/Heading";
-import ScrollButton from "@/app/components/ScrollButton";
 import AboutMeSection from "./components/AboutMeSection";
 
 import localFont from 'next/font/local';
@@ -24,9 +23,10 @@ export default function Home() {
             </div>
           </div>
 
-        <AboutMeSection />
-
         <ArtWorks />
+
+        <AboutMeSection />
+        
     </div>
 
     </div>
