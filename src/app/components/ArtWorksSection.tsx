@@ -31,16 +31,15 @@ export default function ArtWorks() {
 
 
 return (
-    <div className="py-16">
-        <div className="container mx-auto px-4 text-center">
-            <h2 className={`${RobotoLight.className} text-4xl font-bold mb-8`}>ARTWORKS</h2>
-            <div className="overflow-hidden relative" ref={scrollRef}>
+    <div className="pt-72 pb-16">
+        <div className="container mx-auto px-4 pb-56 text-center border-b-4 border-bright-pink">
+            <div className="overflow-hidden relative py-8" ref={scrollRef}>
                 <div className="flex overflow-hidden space-x-0">
                     <div className="flex animate-scroll">
                         {illustrations.map((illustration, index) => (
                             <div
                                 key={index}
-                                className="relative w-96 h-80 mx-4 bg-gray-200 overflow-hidden rounded-lg group"
+                                className="relative w-96 h-96 mx-4 bg-gray-200 overflow-hidden rounded-lg group"
                             >
                                 <Image
                                     src={illustration.src}
@@ -61,7 +60,7 @@ return (
                         {illustrations.map((illustration, index) => (
                             <div
                                 key={index}
-                                className="relative w-96 h-80 mx-4 bg-gray-200 overflow-hidden rounded-lg group"
+                                className="relative w-96 h-96 mx-4 bg-gray-200 overflow-hidden rounded-lg group"
                             >
                                 <Image
                                     src={illustration.src}
@@ -79,9 +78,14 @@ return (
                     </div>
                 </div>
             </div>
+            <div>
+                <p className={`${RobotoLight.className} text-lg text-bistre mt-8 py-20 px-16`}>
+                    I love to explore a range of mediums and techniques, always looking for new ways to express ideas through art. Whether it's watercolours, acrylics, or mixed media, each piece is an experiment in creativity and form. I enjoy playing with different styles, blending them to create something unexpected and engaging. My art reflects this love for variety, inviting viewers to experience the diverse and evolving nature of my artistic journey.
+                </p>
+            </div>
             <Link href="/artworks">
-                <button className={`${RobotoLight.className} mt-8 px-6 py-2 bg-transparent text-sm text-bistre rounded-lg border border-tiffany-blue`}>
-                    Know More
+                <button className={`${RobotoLight.className} mt-8 px-6 py-2 bg-tiffany-blue text-base text-bistre rounded-lg border border-tiffany-blue`}>
+                    Explore Artworks
                 </button>
             </Link>
             

@@ -4,7 +4,6 @@ import localFont from 'next/font/local';
 
 const RobotoLight = localFont({ src: '../fonts/Roboto-Light.ttf' })
 
-
 export default function AboutMeSection() {
     return (
         <div className="relative p-16 rounded-lg mx-auto mt-10">

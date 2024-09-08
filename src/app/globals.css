@@ -16,7 +16,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  background-image: url('/background.png');
+  background-color: #fffbf4;
 }
 
 @layer utilities {

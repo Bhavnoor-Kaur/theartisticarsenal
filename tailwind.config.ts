@@ -47,6 +47,7 @@ module.exports = {
         'bright-pink': "#FD5277",
         'tiffany-blue': "#9ACEBC",
         'bistre': "#251605",
+        'almond': "#f2e5d7",
       },
       backgroundImage: {
         'bg-img-1': "url('/img-1.png')",
