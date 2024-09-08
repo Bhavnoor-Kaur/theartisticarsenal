@@ -67,6 +67,10 @@ module.exports = {
       borderRadius: {
         '5xl': '40px',
       },
+      spacing: {
+        100: '35rem',
+        125: '40rem',
+      }
     },
     animation: {        
       fadeIn: 'fadeIn 1s ease-out',  

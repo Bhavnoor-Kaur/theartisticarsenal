@@ -84,7 +84,7 @@ return (
                 </p>
             </div>
             <Link href="/artworks">
-                <button className={`${RobotoLight.className} mt-8 px-6 py-2 bg-tiffany-blue text-base text-bistre rounded-lg border border-tiffany-blue`}>
+                <button className={`${RobotoLight.className} mt-8 px-6 py-2 bg-tiffany-blue text-base text-bistre rounded-xl border border-tiffany-blue  hover:bg-indigo-dye hover:text-almond`}>
                     Explore Artworks
                 </button>
             </Link>
