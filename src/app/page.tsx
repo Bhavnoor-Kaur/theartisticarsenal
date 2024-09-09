@@ -3,6 +3,7 @@ import Heading from "@/app/components/Heading";
 import AboutMeSection from "./components/AboutMeSection";
 
 import localFont from 'next/font/local';
+import Footer from "./components/Footer";
 
 const CloudCondensed = localFont({ src: '/fonts/Cloud-Condensed.ttf' });
 
@@ -25,6 +26,8 @@ export default function Home() {
         </div>
         <ArtWorks />
         <AboutMeSection />
+
+        <Footer />
         
       </div>
     </div>
